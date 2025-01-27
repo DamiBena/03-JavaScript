@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Estoy aprendiendo java script</h1>
+    <p id="mensaje"></p>
+
+    <script>
+        console.log("Hola mundo");
+        console.log("Mi nombre es Damaris")
+        /*window.alert("Hola mundo");*/
+        document.getElementById("mensaje").innerHTML = "parrafo con texto dinamico";
+
+        const Persona = {
+
+            nombre: "Juan",
+            edad: "27 años",
+            genero: "femenino",
+
+        }
+
+        console.log(Persona);
+        console.log(Persona.nombre);
+
+        let information = Persona.nombre + Persona.edad + Persona.genero 
+        console.log(information)
+
+    </script>
+
+</body>
+
+</html>

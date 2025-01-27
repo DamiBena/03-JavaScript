@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tabla de multiplicar</h1>
+    <button onclick="example">Tabla del 5</button>
+    
+
+    <script>
+        const creartablademultiplicar = () => {
+            let result = 0;
+
+            for (let i = 0; i < 10; i++) {
+                console.log(`Tabla del ${i + 1}`);
+
+                for (let j = 0; j < 10; j++) {
+                    result = (i + 1) * (j + 1);
+                    console.log(`${i + 1}*${j + 1}={result}`)
+                }
+
+                console.log("/n")
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
