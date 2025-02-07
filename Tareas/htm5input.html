@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="myDiv">Hola mundo</div> <br>
+    <button onclick="selectBackColor()">Cambiar color fondo</button><br>
+    <input type="color" id="colorfondoo"><br>
+
+    <button onclick="selectTextColor()">Cambiar color texto</button><br>
+    <input type="color" id="colortextoo"><br>
+
+    <script>
+        function selectBackColor() {
+            let colorfondo = document.getElementById("colorfondoo").value;
+            document.getElementById("myDiv").style.backgroundColor = colorfondo;
+        }
+
+        function selectTextColor() {
+            let colortexto = document.getElementById("colortextoo").value;
+            document.getElementById("myDiv").style.color = colortexto;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

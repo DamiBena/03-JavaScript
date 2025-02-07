@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hazlo tu mismo</h1>
+    <p>Ingrese la informacion correspondiente</p>
+    <input type="text" id="city" placeholder="Ciudad"> <br>
+    <input type="text" id="coutry" placeholder="Pais"> <br>
+    <button onclick="resultado()">Informacion usuario</button> <br>
+    <p id="myp"></p>
+
+    <script>
+        function resultado() {
+            let city = document.getElementById('city').value;
+            let coutry = document.getElementById('coutry').value;
+            window.alert("Ciudad:" + city + "\nPais: " + coutry);
+            document.getElementById("myp").innerText = "Ciudad:" + city + ", Pais:" + coutry;
+        }
+       
+    </script>
+
+</body>
+
+</html>

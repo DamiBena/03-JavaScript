@@ -52,6 +52,8 @@ arraynombres.sort(arraynombres);
 console.log(arraynombres);*/
 
 //Eliminar el primer elemento del array
+
+
 arr2.shift();
 console.log(arr2);
 

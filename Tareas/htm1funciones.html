@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Funciones</h1>
+    <button onclick="maxbetween3Numbers(1,2,3)">findmax</button>
+    <p id="max"></p>
+
+    <button onclick=" findNumberIntoArray"></button>
+
+    <script>
+        function maxbetween3Numbers(n1, n2, n3) {
+            let mmaxbetween3Numbers = Math.max(n1, n2, n3);
+            alert(maxbetween3Numbers);
+        }
+
+        //funcion de declaracion/ejercicio funcion de expresion
+
+        const getMaxNumber = function (array) {
+            console.log(Mat.max(...array))
+            alert(Math.max(...array));
+            return Math.max(...array);
+
+        }
+
+        // ejercicion funcion de flecha 6
+
+        const getMaxNumber2 = (array) => {
+            console.log(Mat.max(...array))
+            alert(Math.max(...array));
+            return Math.max(...array);
+        }
+
+        //ejercicio funcion de declaracion 7 
+
+
+        function findNumberIntoArray(array, number) {
+            let insNumberPresent = array.indexOf(number);
+            if (insNumberPresent > 0) {
+                console.log(true)
+                return true;
+            }
+
+            console.log(false)
+            return false;
+        }
+
+        //mismo ejercio con find el #7
+
+        const findNumberIntoArray2 = function (array, number) {
+            let isNumberPresent = array.find((elemento) => elemento == number);
+            return isNumberPresent >= 0 ? console.log(ture) : console.log(false);
+
+        }
+
+        //ejercion #8 funciones
+
+        const findNumberIntoArray3 = function (array, number) {
+            let isNumberPresent = array.find((elemento) => elemento == number);
+            return isNumberPresent >= 0 ? console.log(ture) : console.log(false);
+
+        }
+        //ejercion #9 funciones de flecha
+
+        const findNumberIntoArray4 = (array, number) => {
+            let isNumberPresent = array.find((elemento) => elemento == number);
+            return isNumberPresent >= 0 ? console.log(ture) : console.log(false);
+
+        }
+        // relacionar en html con un button segun pida el ejercicio para que funcione el ejercicio
+    </script>
+</body>
+
+</html>
